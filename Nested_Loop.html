@@ -1,10 +1,126 @@
 <html>
   <script>
-   var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
-   for (var i = team.length-1; i >= 0; i--){
-    console.log(team)
-    console.log(team[i])                                     // Reverse print in string
-   } 
+  //  var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+  //  for (var i = team.length-1; i >= 0; i--){
+  //  console.log(team)
+  //  console.log(team[i])                                     // Reverse print in string
+  //  } 
+
+//   var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+//   var newArr = [];
+//   for (var i = team.length-1; i >= 0; i--){              // variable are include
+
+//     newArr.push(team[i])
+// }
+
+//   console.log(newArr)
+
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// var newArr = team.reverse()                                        // Function in include reverse element 
+// console.log(newArr)
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// console.log(team.length)                                            // Function .length
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+//  console.log("Array---",team)
+//  console.log("String---",team.toString())                                          // Function .toString()
+
+
+// var name = "HiteshYogi"
+// for (var i = 0; i < name.length; i++ ){                                    // String in For loop count
+//    console.log(name[i])
+  
+// }
+// console.log(name[6])
+// console.log(name.length)
+
+var num =["Hitesh", "Yogi","Ji"]
+console.log(num.join(" - "))
+
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// console.log(team.join("  *  "))                                                 // join("  *  ") Function in this use
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// // console.log(team[1])                                                           // .at()  Function in query
+// console.log(team.at(0))                                                          // .at()  Function in query
+
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// console.log(team.indexOf("Vinod"))                                        // .indexOf("Vinod") in address of index find
+
+
+
+// var team = ["Rohit","Virat","Bhuvi","Raina","Vinod"];
+// console.log(team) 
+// var newArr = team.pop()                                                 // .pop() Function in string in last item a Remove
+// console.log(team)  
+// console.log(newArr) 
+
+
+
+
+  var num = [100, 200, 300, 400, 500]
+  console.log(num)
+  var newArr1 = num.pop()   // pop() Last item Remove
+  console.log(num)
+  console.log(newArr1)
+
+  var num = [100, 200, 300, 400, 500]
+  console.log(num)
+  var newArr2 = num.shift()   // shift() Frist item Remove
+  console.log(num)
+  console.log(newArr2)
+
+  var num = [100, 200, 300, 400, 500]
+  num.push(600)                             // .push(600) Function in add in value in Last
+  console.log(num)
+
+  var num = [100, 200, 300, 400, 500]
+  num.unshift(50)                             // .unshift(50) Function in First value add
+  console.log(num)
+
+
+  var num = [100, 200, 300, 400, 500]
+  num.splice(2,0,"Hiesh", "Yogi")        // .splice(index, remove, adding)
+  console.log(num)                       //  .splice(2,0,"Hitesh","Yogi")
+
+  var num = [100, 200, 300, 400, 500]
+  num.splice(2,2,"Hiesh", "Yogi")          // .splice(index, remove, adding)
+  console.log(num)                       //  .splice(2,1,"Hitesh","Yogi")
+
+
+  var num = [100, 200, 300, 400, 500, 600, 700, 800]
+  console.log(num.slice(2,5))                         // .splice in start number and last number in find out to list
+
+  var num = [10, 20, 30, 31, 32, 33, 40, 50]
+  console.log(num.slice(3,6)) 
+  
+  
+
+
+  var num = [10, 20, 30, 31, 32, 33, 40, 50]   // .include() answer will be (true/false)
+  console.log(num.includes(40))
+  console.log(num.includes(400))
+  
+                      
+
+     
+
+
 
   </script>
 </html>
