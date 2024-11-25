@@ -1,0 +1,168 @@
+<html>
+  <script>
+// Input three numbers
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+let num3 = parseFloat(prompt("Enter the third number:"));
+
+// Find the minimum number
+let minimum = Math.min(num1, num2, num3);
+
+// Display the result
+console.log("The minimum number is:", minimum);
+alert("The minimum number is: " + minimum);
+
+
+let number = parseInt(prompt("Enter a number to find its factorial:"));
+let factorial = 1;
+
+if (number < 0) {
+    alert("Factorial is not defined for negative numbers.");
+} else if (number === 0 || number === 1) {
+    factorial = 1; 
+} else {
+    for (let i = 2; i <= number; i++) {
+        factorial *= i; 
+    }
+}
+
+if (number >= 0) {
+    alert("The factorial of " + number + " is: " + factorial);
+    console.log("The factorial of " + number + " is:", factorial);
+}
+
+
+
+let age = parseInt(prompt("Enter the age of the person:"));
+let ageGroup;
+
+if (age >= 0 && age <= 2) {
+    ageGroup = "Infant (0-2)";
+} else if (age >= 3 && age <= 5) {
+    ageGroup = "Toddler (3-5)";
+} else if (age >= 6 && age <= 12) {
+    ageGroup = "Child (6-12)";
+} else if (age >= 13 && age <= 17) {
+    ageGroup = "Teenager (13-17)";
+} else if (age >= 18) {
+    ageGroup = "Adult (18+)";
+} else {
+    ageGroup = "Invalid input! Please enter a valid age.";
+}
+
+// Display the result
+console.log(`The person is classified as: ${ageGroup}`);
+alert(`The person is classified as: ${ageGroup}`);
+
+
+
+
+let sum = 0;
+for (let i = 1; i <= 100; i += 2) { 
+    sum += i; 
+}
+console.log("The sum of odd numbers between 0 and 100 is:", sum);
+alert("The sum of odd numbers between 0 and 100 is: " + sum);
+
+
+
+
+
+let number1 = parseInt(prompt("Enter a number to generate its multiplication table in reverse order:"));
+let table = "";
+for (let i = 10; i >= 1; i--) {
+    table += `${number1} x ${i} = ${number1 * i}\n`;
+}
+
+console.log(`Multiplication Table of ${number1} in Reverse Order:\n${table}`);
+alert(`Multiplication Table of ${number1} in Reverse Order:\n${table}`);
+
+
+
+
+
+let x = parseFloat(prompt("Enter the x-coordinate:"));
+let y = parseFloat(prompt("Enter the y-coordinate:"));
+
+// Determine the quadrant
+let quadrant;
+if (x > 0 && y > 0) {
+    quadrant = "Quadrant I (Top-Right)";
+} else if (x < 0 && y > 0) {
+    quadrant = "Quadrant II (Top-Left)";
+} else if (x < 0 && y < 0) {
+    quadrant = "Quadrant III (Bottom-Left)";
+} else if (x > 0 && y < 0) {
+    quadrant = "Quadrant IV (Bottom-Right)";
+} else if (x === 0 && y !== 0) {
+    quadrant = "On the Y-axis";
+} else if (y === 0 && x !== 0) {
+    quadrant = "On the X-axis";
+} else {
+    quadrant = "At the Origin";
+}
+
+// Display the result
+console.log(`The point (${x}, ${y}) lies in: ${quadrant}`);
+alert(`The point (${x}, ${y}) lies in: ${quadrant}`);
+
+
+
+
+
+let time = parseInt(prompt("Enter the time (0-23) in 24-hour format:"));
+let status;
+if (time >= 5 && time < 12) {
+    status = "Morning";
+} else if (time >= 12 && time < 17) {
+    status = "Afternoon";
+} else if (time >= 17 && time < 21) {
+    status = "Evening";
+} else if ((time >= 21 && time <= 23) || (time >= 0 && time < 5)) {
+    status = "Night";
+} else {
+    status = "Invalid input! Please enter a time between 0 and 23.";
+}
+
+// Display the result
+console.log(`The time (${time}:00) corresponds to: ${status}`);
+alert(`The time (${time}:00) corresponds to: ${status}`);
+
+
+
+
+
+
+let month = prompt("Enter a month to determine the season:").trim().toLowerCase();
+let season;
+
+if (month === "september" || month === "october" || month === "november") {
+    season = "Autumn";
+} else if (month === "december" || month === "january" || month === "february") {
+    season = "Winter";
+} else if (month === "march" || month === "april" || month === "may") {
+    season = "Spring";
+} else if (month === "june" || month === "july" || month === "august") {
+    season = "Summer";
+} else {
+    season = "Invalid input! Please enter a valid month.";
+}
+
+console.log(`The season for ${month.charAt(0).toUpperCase() + month.slice(1)} is: ${season}`);
+alert(`The season for ${month.charAt(0).toUpperCase() + month.slice(1)} is: ${season}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

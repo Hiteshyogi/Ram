@@ -1,0 +1,23 @@
+<html>
+  <script>
+  
+let time = parseInt(prompt("Enter the time (0-23) in 24-hour format:"));
+let status;
+if (time >= 5 && time < 12) {
+    status = "Morning";
+} else if (time >= 12 && time < 17) {
+    status = "Afternoon";
+} else if (time >= 17 && time < 21) {
+    status = "Evening";
+} else if ((time >= 21 && time <= 23) || (time >= 0 && time < 5)) {
+    status = "Night";
+} else {
+    status = "Invalid input! Please enter a time between 0 and 23.";
+}
+
+// Display the result
+console.log(`The time (${time}:00) corresponds to: ${status}`);
+alert(`The time (${time}:00) corresponds to: ${status}`);
+
+  </script>
+</html>

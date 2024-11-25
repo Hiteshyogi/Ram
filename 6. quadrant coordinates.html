@@ -1,0 +1,30 @@
+<html>
+  <script>
+
+let x = parseFloat(prompt("Enter the x-coordinate:"));
+let y = parseFloat(prompt("Enter the y-coordinate:"));
+
+// Determine the quadrant
+let quadrant;
+if (x > 0 && y > 0) {
+    quadrant = "Quadrant I (Top-Right)";
+} else if (x < 0 && y > 0) {
+    quadrant = "Quadrant II (Top-Left)";
+} else if (x < 0 && y < 0) {
+    quadrant = "Quadrant III (Bottom-Left)";
+} else if (x > 0 && y < 0) {
+    quadrant = "Quadrant IV (Bottom-Right)";
+} else if (x === 0 && y !== 0) {
+    quadrant = "On the Y-axis";
+} else if (y === 0 && x !== 0) {
+    quadrant = "On the X-axis";
+} else {
+    quadrant = "At the Origin";
+}
+
+// Display the result
+console.log(`The point (${x}, ${y}) lies in: ${quadrant}`);
+alert(`The point (${x}, ${y}) lies in: ${quadrant}`);
+
+  </script>
+</html>

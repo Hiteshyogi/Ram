@@ -1,0 +1,14 @@
+<html>
+  <script>
+    
+let number = parseInt(prompt("Enter a number to generate its multiplication table in reverse order:"));
+let table = "";
+for (let i = 10; i >= 1; i--) {
+    table += `${number} x ${i} = ${number * i}\n`;
+}
+
+console.log(`Multiplication Table of ${number} in Reverse Order:\n${table}`);
+alert(`Multiplication Table of ${number} in Reverse Order:\n${table}`);
+
+  </script>
+</html>

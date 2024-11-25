@@ -1,0 +1,23 @@
+<html>
+  <script>
+   
+let number = parseInt(prompt("Enter a number to find its factorial:"));
+let factorial = 1;
+
+if (number < 0) {
+    alert("Factorial is not defined for negative numbers.");
+} else if (number === 0 || number === 1) {
+    factorial = 1; 
+} else {
+    for (let i = 2; i <= number; i++) {
+        factorial *= i; 
+    }
+}
+
+if (number >= 0) {
+    alert("The factorial of " + number + " is: " + factorial);
+    console.log("The factorial of " + number + " is:", factorial);
+}
+
+  </script>
+</html>

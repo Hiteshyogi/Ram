@@ -1,0 +1,23 @@
+<html>
+  <script>
+let month = prompt("Enter a month to determine the season:").trim().toLowerCase();
+let season;
+
+if (month === "september" || month === "october" || month === "november") {
+    season = "Autumn";
+} else if (month === "december" || month === "january" || month === "february") {
+    season = "Winter";
+} else if (month === "march" || month === "april" || month === "may") {
+    season = "Spring";
+} else if (month === "june" || month === "july" || month === "august") {
+    season = "Summer";
+} else {
+    season = "Invalid input! Please enter a valid month.";
+}
+
+console.log(`The season for ${month.charAt(0).toUpperCase() + month.slice(1)} is: ${season}`);
+alert(`The season for ${month.charAt(0).toUpperCase() + month.slice(1)} is: ${season}`);
+
+
+  </script>
+</html>
